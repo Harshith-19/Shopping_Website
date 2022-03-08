@@ -38,5 +38,13 @@ def processjSON():
         return "Process Cancelled Because One Of The items You Tried To Remove Not Found"
 
 
+@app.route("/history")
+def history():
+    c=0
+    d=0
+    for i in P:
+        c+=i
+    return render_template("history.html",c=c,P=P,d=d)
+    
 if __name__=="__main__":
     app.run()
