@@ -143,6 +143,10 @@ def history():
 @app.route("/policy")
 def policy():
     return render_template("policy.html")
+  
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 if __name__=="__main__":
     app.run()
