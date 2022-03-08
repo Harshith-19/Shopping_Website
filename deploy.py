@@ -88,5 +88,10 @@ def view():
     return render_template("view.html",p=p)
 
 
+@app.route("/sold")
+def sold():
+    return render_template("sold.html")
+
+
 if __name__=="__main__":
     app.run()
